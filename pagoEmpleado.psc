@@ -6,7 +6,7 @@ Proceso pagoEmpleado
 	//Título del sistema impreso en pantalla
 	Escribir "***** Calcular el Pago de los Empleados *****";
 	Escribir "";
-	//Solicitud de cantidad de asistentes a clase
+	//Solicitud de la cantidad de autos pequeños y grandes lavados
 	Escribir "Ingrese la cantidad de carros pequeños lavados por el empleado: ";
 	Leer pCar;
 	Escribir "";
@@ -15,7 +15,7 @@ Proceso pagoEmpleado
 	Escribir "";
 	//Asignación de valores fijos a variables
 	pPcar <- 20; pGcar <- 40; salario <- 100;
-	//Calculo del pago al entrenador
+	//Calculo del pago al empleado
 	total <- salario + (pPcar * pCar) + (pGcar * gCar);
 	Escribir "El total a pagar por el día de trabajo del empleado es: ", total, " $";
 	Escribir "";
