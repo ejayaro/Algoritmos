@@ -2,11 +2,11 @@ Proceso aumentoSueldo
 	Escribir "";
 	//Definir variables
 	Definir puesto Como Entero;
-	Definir sueldo, aumento, obrero, gerente, vendedor,director, porcentaje Como Real;
+	Definir sueldo, aumento, obrero, gerente, vendedor, director, porcentaje Como Real;
 	Definir nombre como cadena;
-	//Asignación de valores a las variables
+	//Asignacion de valores a las variables
 	obrero <- 1.15; gerente <- 1.10; vendedor <- 1.10; director <- 1.05;
-	//Título del sistema impreso en pantalla
+	//Titulo del sistema impreso en pantalla
 	Escribir ' *****  $$$$$  *****    Sueldos y Aumentos     *****  $$$$$  *****';
 	Escribir '';
 	//Menú de puestos de trabajadores de la empresa
