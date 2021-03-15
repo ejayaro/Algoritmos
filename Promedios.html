@@ -1,0 +1,82 @@
+<HTML><HEAD>
+	<TITLE>Promedios.psc</TITLE>
+	<STYLE type="text/css">
+		.SSD { color:#FFFFFF; background-color:#000000; }
+		.SS0 { color:#000000; background-color:#FFFFFF; }
+		.SS1 { color:#000000; background-color:#FFFFFF; }
+		.SS2 { font-style: italic; color:#969696; background-color:#FFFFFF; }
+		.SS3 { font-style: italic; color:#0000FF; background-color:#FFFFFF; }
+		.SS4 { color:#8E6B23; background-color:#FFFFFF; }
+		.SS5 { font-weight: bold; color:#000080; background-color:#FFFFFF; }
+		.SS6 { color:#FF0000; background-color:#FFFFFF; }
+		.SS7 { color:#FF0000; background-color:#FFFFFF; }
+		.SS8 { color:#DB70DB; background-color:#FFFFFF; }
+		.SS9 { color:#238E23; background-color:#FFFFFF; }
+		.SS10 { font-weight: bold; color:#000000; background-color:#FFFFFF; }
+		.SS11 { color:#000000; background-color:#FFFFFF; }
+		.SS12 { color:#FF0000; background-color:#F0F0F0; }
+		.SS13 { color:#000000; background-color:#FFFFFF; }
+		.SS14 { color:#DB70DB; background-color:#FFFFFF; }
+		.SS15 { color:#238E23; background-color:#FFFFFF; }
+		.SS16 { color:#000080; background-color:#FFFFFF; }
+		.SS17 { color:#42426F; background-color:#FFFFFF; }
+		.SS18 { color:#FF0000; background-color:#FFFFFF; }
+		.SS19 { color:#000000; background-color:#BFD8D8; }
+		.SS34 { font-weight: bold; color:#FF0000; background-color:#F0F0FF; }
+		.SS35 { font-weight: bold; color:#800000; background-color:#FFFFFF; }
+	</STYLE>
+</HEAD><BODY><PRE>
+<SPAN class="SS5">Proceso</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">Promedios</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS5">Escribir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS6">''</SPAN><SPAN class="SS10">;</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS2">//Definir variables</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS5">Definir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">promF</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">promM</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">prom</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">notasM</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">notasF</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">notas1</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">notas2</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">notas</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Como</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Real</SPAN><SPAN class="SS10">;</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS5">Definir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">i</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">numA</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS11">sexo</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">contF</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">contM</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Como</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Entero</SPAN><SPAN class="SS10">;</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS2">//Inicialización de variables</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS11">prom</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS9">←</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS4">0</SPAN><SPAN class="SS10">;</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">promM</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS9">←</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS4">0</SPAN><SPAN class="SS10">;</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">promF</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS9">←</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS4">0</SPAN><SPAN class="SS10">;</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">notasM</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS9">←</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS4">0</SPAN><SPAN class="SS10">;</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">notasF</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS9">←</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS4">0</SPAN><SPAN class="SS10">;</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS11">i</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS9">←</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS4">1</SPAN><SPAN class="SS10">;</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">numA</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS9">←</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS4">0</SPAN><SPAN class="SS10">;</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">contF</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS9">←</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS4">0</SPAN><SPAN class="SS10">;</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">contM</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS9">←</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS4">0</SPAN><SPAN class="SS10">;</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">notas1</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS9">←</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS4">0</SPAN><SPAN class="SS10">;</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">notas2</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS9">←</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS4">0</SPAN><SPAN class="SS10">;</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS2">//Nombre del sistema impreso en pantalla</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS5">Escribir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS6">'***** Promedio Alumnos, Alumnas y General *****'</SPAN><SPAN class="SS10">;</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS5">Escribir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS6">''</SPAN><SPAN class="SS10">;</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS2">//Solicitar cantidad de alumnos para el numero de iteraciones</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS5">Escribir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS6">'Ingrese la cantidad de alumnos del grupo escolar:'</SPAN><SPAN class="SS10">;</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS5">Leer</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">numA</SPAN><SPAN class="SS10">;</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS5">Escribir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS6">''</SPAN><SPAN class="SS10">;</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS5">Mientras</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">i</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS10">≤</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">numA</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Hacer</SPAN><SPAN class="SS0">
+        </SPAN><SPAN class="SS2">//Solicitar sexo del alumno para sacar promedios separados</SPAN><SPAN class="SS0">
+        </SPAN><SPAN class="SS5">Escribir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS6">'Ingrese el sexo del alumno #'</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">i</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS6">' (Masculino = 1, Femenino = 2): '</SPAN><SPAN class="SS10">;</SPAN><SPAN class="SS0">
+        </SPAN><SPAN class="SS5">Leer</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">sexo</SPAN><SPAN class="SS10">;</SPAN><SPAN class="SS0">
+        </SPAN><SPAN class="SS5">Escribir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS6">''</SPAN><SPAN class="SS10">;</SPAN><SPAN class="SS0">
+        </SPAN><SPAN class="SS5">Segun</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">sexo</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">hacer</SPAN><SPAN class="SS0">
+            </SPAN><SPAN class="SS4">1</SPAN><SPAN class="SS10">:</SPAN><SPAN class="SS0">
+                </SPAN><SPAN class="SS5">Escribir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS6">'Ingrese la nota del alumno '</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">i</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS6">' :'</SPAN><SPAN class="SS10">;</SPAN><SPAN class="SS0">
+                </SPAN><SPAN class="SS5">Leer</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">notasM</SPAN><SPAN class="SS10">;</SPAN><SPAN class="SS0">
+                </SPAN><SPAN class="SS11">notas1</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS9">←</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">notas1</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS10">+</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">notasM</SPAN><SPAN class="SS10">;</SPAN><SPAN class="SS0">
+                </SPAN><SPAN class="SS11">contM</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS9">←</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">contM</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS10">+</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS4">1</SPAN><SPAN class="SS10">;</SPAN><SPAN class="SS0">
+                </SPAN><SPAN class="SS11">promM</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS9">←</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">notas1</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS10">/</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">contM</SPAN><SPAN class="SS10">;</SPAN><SPAN class="SS0">
+                </SPAN><SPAN class="SS11">i</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS9">←</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">i</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS10">+</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS4">1</SPAN><SPAN class="SS10">;</SPAN><SPAN class="SS0">
+                </SPAN><SPAN class="SS5">Escribir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS6">''</SPAN><SPAN class="SS10">;</SPAN><SPAN class="SS0">
+            </SPAN><SPAN class="SS4">2</SPAN><SPAN class="SS10">:</SPAN><SPAN class="SS0">
+                </SPAN><SPAN class="SS5">Escribir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS6">'Ingrese la nota de la alumna '</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">i</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS6">' :'</SPAN><SPAN class="SS10">;</SPAN><SPAN class="SS0">
+                </SPAN><SPAN class="SS5">Leer</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">notasF</SPAN><SPAN class="SS10">;</SPAN><SPAN class="SS0">
+                </SPAN><SPAN class="SS11">notas2</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS9">←</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">notas2</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS10">+</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">notasF</SPAN><SPAN class="SS10">;</SPAN><SPAN class="SS0">
+                </SPAN><SPAN class="SS11">contF</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS9">←</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">contF</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS10">+</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS4">1</SPAN><SPAN class="SS10">;</SPAN><SPAN class="SS0">
+                </SPAN><SPAN class="SS11">promF</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS9">←</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">notas2</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS10">/</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">contF</SPAN><SPAN class="SS10">;</SPAN><SPAN class="SS0">
+                </SPAN><SPAN class="SS11">i</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS9">←</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">i</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS10">+</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS4">1</SPAN><SPAN class="SS10">;</SPAN><SPAN class="SS0">
+                </SPAN><SPAN class="SS5">Escribir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS6">''</SPAN><SPAN class="SS10">;</SPAN><SPAN class="SS0">
+            </SPAN><SPAN class="SS5">De</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Otro</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS5">Modo</SPAN><SPAN class="SS10">:</SPAN><SPAN class="SS0">
+                </SPAN><SPAN class="SS5">Escribir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS6">'El valor del sexo no es correcto'</SPAN><SPAN class="SS10">;</SPAN><SPAN class="SS0">
+                </SPAN><SPAN class="SS5">Escribir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS6">''</SPAN><SPAN class="SS10">;</SPAN><SPAN class="SS0">
+        </SPAN><SPAN class="SS5">FinSegun</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS5">FinMientras</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS2">//Calculo del promedio genral</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS11">prom</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS9">←</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS10">(</SPAN><SPAN class="SS11">notas1</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS10">+</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">notas2</SPAN><SPAN class="SS10">)</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS10">/</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">numA</SPAN><SPAN class="SS10">;</SPAN><SPAN class="SS0"> 
+    </SPAN><SPAN class="SS2">//Impresión de los promedios por sexo y general</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS5">Escribir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS6">'El promedio general es de: '</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">prom</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS6">' puntos'</SPAN><SPAN class="SS10">;</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS5">Escribir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS6">''</SPAN><SPAN class="SS10">;</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS5">Escribir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS6">'El promedio de los alumnos es: '</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS11">promM</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS6">' puntos'</SPAN><SPAN class="SS10">;</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS5">Escribir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS6">''</SPAN><SPAN class="SS10">;</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS5">Escribir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS6">'El promedio de las alumnas es: '</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS11">promF</SPAN><SPAN class="SS10">,</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS6">' puntos'</SPAN><SPAN class="SS10">;</SPAN><SPAN class="SS0">
+    </SPAN><SPAN class="SS5">Escribir</SPAN><SPAN class="SS0"> </SPAN><SPAN class="SS6">''</SPAN><SPAN class="SS10">;</SPAN><SPAN class="SS0">
+</SPAN><SPAN class="SS5">FinProceso</SPAN><SPAN class="SS0">
+</SPAN>
+</PRE></BODY></HTML>
